@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Background image and center the login form */
+  .login-container {
+    background-image: url('https://your-image-link.com');  /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+  
+  .login-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  input::placeholder {
+    color: #888;
+  }
+  
+  /* Buttons Styling */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .login-btn {
+    width: 48%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .login-box {
+      width: 85%;
+    }
+  
+    .login-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
