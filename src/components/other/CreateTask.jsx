@@ -38,13 +38,13 @@ const CreateTask = () => {
     }
 
     return (
-        <div className='p-5 bg-[#1c1c1c] mt-5 rounded'>
+        <div className='p-3 sm:p-5 bg-[#1c1c1c] mt-5 rounded'>
             <form onSubmit={(e) => {
                 submitHandler(e)
             }}
-                className='flex flex-wrap w-full items-start justify-between'
+                className='flex flex-col sm:flex-row flex-wrap w-full items-start justify-between gap-4'
             >
-                <div className='w-1/2'>
+                <div className='w-full sm:w-1/2'>
                     <div>
                         <h3 className='text-sm text-gray-300 mb-0.5'>Task Title</h3>
                         <input
@@ -84,7 +84,7 @@ const CreateTask = () => {
                     </div>
                 </div>
 
-                <div className='w-2/5 flex flex-col items-start'>
+                <div className='w-full sm:w-2/5 flex flex-col items-start mt-4 sm:mt-0'>
                     <h3 className='text-sm text-gray-300 mb-0.5'>Description</h3>
                     <textarea value={taskDescription}
                         onChange={(e) => {
